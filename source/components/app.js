@@ -16,7 +16,8 @@ export default class App extends Component {
 
   render() {
     return (
-      <button onClick={this.handleClick}>
+      <button className="col-small-12 col-medium-10 col-large-4"
+        onClick={this.handleClick}>
         {this.state.isToggleOn ? 'ON' : 'OFF'}
       </button> 
     );
