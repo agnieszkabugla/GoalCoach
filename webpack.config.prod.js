@@ -9,6 +9,7 @@ const GLOBALS = {
 };
 
 const config = {
+  mode: 'production',
   context: path.resolve(__dirname, './source'),
   entry: {
     // removing 'public/src' directory from entry point, since 'context' is taking care of that

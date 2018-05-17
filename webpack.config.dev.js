@@ -3,6 +3,7 @@ import path from 'path';
 import HTMLWebpackPlugin from 'html-webpack-plugin';
 
 const config = {
+  mode: 'development',
   context: path.resolve(__dirname, './source/'),
   entry: {
     app: './index.js'
