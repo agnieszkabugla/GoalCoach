@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
+import { Router, Route, browserHistory } from 'react-router';
 
-import App from './components/app';
-import reducers from './reducers';
+import App from './components/App';
+import SignIn from './components/SignIn';
+import SignUp from './components/SignUp';
 
-//const createStoreWithMiddleware = applyMiddleware()(createStore);
-
-ReactDOM.render(<App />, document.querySelector('.container')); 
+ReactDOM.render(
+<Router path="/" history={browserHistory}>
+  <Route path="/app" component={App} />
+  <Route path="/signin" component={SignIn} />
+  <Route path="/signup" component={SignUp} />
+</Router>, document.querySelector('.container')
+);

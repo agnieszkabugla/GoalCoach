@@ -1,8 +1,8 @@
-# React/Redux Boilerplate
+# Goal Coach
 ## Javascript Development Environment
 What does it include?
 * Development / Build servers
-* Webpack 3.0 module bundler
+* Webpack 4.0 module bundler
 * Babel transpiler
 * ES Lint
 * Editor configuration
@@ -27,7 +27,7 @@ $ npm --version
 
 ## Install the project
 ```
-$ git clone https://github.com/agnieszkabugla/Starter-Kit-React
+$ git clone https://github.com/agnieszkabugla/GoalCoach.git
 $ cd PROJECT
 $ npm install
 ```
